@@ -226,8 +226,8 @@ def analisys(message):
     hexagon, coords, total = algorithm(lst[0], int(lst[1]))
     hexagon = "\n".join(hexagon)
     bot.send_message(message.chat.id, f"ID of hexagon: {hexagon}")
-    print(coords)
-    bot.send_message(message.chat.id, str(coords))
+    c = "All coordinates:\n"+"\n".join([str(i) for i in coords])
+    bot.send_message(message.chat.id, str(c))
     for i in range(len(coords)):
         map = folium.Map(location = coords[i], title = "Your best place", zoom_start = 14)
         folium.Marker(location = coords[i]).add_to(map)
