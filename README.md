@@ -1,3 +1,4 @@
+# Lie group team
 # Detecting the best location for automatic bank terminals
 ## Files
 - AlfaPlace.py script that runs telegram bot for serving requests
